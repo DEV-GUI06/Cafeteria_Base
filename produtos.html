@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio Digital Coffees</title>
+
+    <link rel="stylesheet" href="produtos.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./imgs/logo.png" alt="Logo" class="logo" />
+        <h2>(Cafeteria)</h2>
+      </nav>
+    </header>
+
+    <div class="hero-banner">
+      <div class="banner-content">
+        <div
+          class="banner-image"
+        ></div>
+        <h1>Bem-vindo! Veja os nossos produtos.</h1>
+        <p>Os melhores sabores para o seu dia!</p>
+      </div>
+    </div>
+
+    <div class="category-buttons">
+      <button onclick="filterProducts('coffees')">Cafés</button>
+      <button onclick="filterProducts('chocolatehot')">Chocolates</button>
+      <button onclick="filterProducts('drinkscoffe')">Drinks com Café</button>
+      <button onclick="filterProducts('drinks')">Drinks sem Café</button>
+      <button onclick="filterProducts('teas')">Chás</button>
+    </div>
+
+    <main>
+      <section class="product-list" id="product-list">
+        <div class="product coffees">
+          <img src="./imgs/café.png" alt="Produto 1" />
+          <h2>Café Especial</h2>
+          <p>Uma experiência única em cada xícara.</p>
+        </div>
+
+        <div class="product chocolatehot">
+          <img src="./imgs/chocolate.png" alt="Produto 2" />
+          <h2>Chocolate Quente</h2>
+          <p>Um sabor irresistível de chocolate.</p>
+        </div>
+
+        <div class="product drinkscoffe">
+          <img src="./imgs/macchiato.png" alt="Produto 3" />
+          <h2>Latte Macchiato</h2>
+          <p>Café cremoso com leite vaporizado.</p>
+        </div>
+
+        <div class="product drinks">
+          <img src="./imgs/suco.png" alt="Produto 4" />
+          <h2>Suco Natural</h2>
+          <p>Refresque-se com um suco natural.</p>
+        </div>
+
+        <div class="product teas">
+          <img src="./imgs/cha.png" alt="Produto 5" />
+          <h2>Chá de Ervas</h2>
+          <p>Relaxe com um chá de ervas calmante.</p>
+        </div>
+
+        <!-- Adicione mais produtos conforme necessário -->
+      </section>
+    </main>
+
+    <footer>
+      <img src="./imgs/logo.png" alt="Logo" />
+      <p>&copy; 2025 (Cafeteria). Todos os direitos reservados.</p>
+      <p>
+        Desenvolvido por
+        <a href="https://instagram.com/guilhermedev_/" target="_blank"
+          >@DEV GUI</a
+        >
+      </p>
+    </footer>
+
+    <div class="floating-buttons">
+      <a href="index.html" class="floating-button">Home</a>
+      <a href="index-produtos.html" class="floating-button">Produtos</a>
+    </div>
+
+    <script src="produtos.js"></script>
+  </body>
+</html>

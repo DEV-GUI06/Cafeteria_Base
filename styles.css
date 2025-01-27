@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Molengo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Personalizar a barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #2c1e10; /* Cor do fundo da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8c6849; /* Cor da barra de rolagem */
+  border-radius: 10px;
+  border: 2px solid #2c1e10; /* Bordas para criar contraste */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #af9783; /* Cor ao passar o mouse */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #563e2e; /* Cor ao clicar */
+}
+
+body {
+  font-family: "Lora", serif;
+  background: rgb(62, 46, 32);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(62, 46, 32, 1) 10%,
+    rgba(44, 30, 16, 1) 50%,
+    rgba(10, 5, 4, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(62, 46, 32, 1) 10%,
+    rgba(44, 30, 16, 1) 50%,
+    rgba(10, 5, 4, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(62, 46, 32, 1) 10%,
+    rgba(44, 30, 16, 1) 50%,
+    rgba(10, 5, 4, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3e2e20",endColorstr="#0a0504",GradientType=1);
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+header .logo {
+  width: 50px;
+}
+
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("./imgs/banner2.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  border-radius: 20px;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+}
+
+.hero-banner p {
+  font-size: 1.2rem;
+}
+
+#about {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-content img {
+  width: 35%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about-more {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #21160b;
+  color: #f5f5f5;
+  border-radius: 20px;
+  margin: 20px auto;
+  width: 90%;
+}
+
+#about-more h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about-more p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.social-button img {
+  width: 54px;
+}
+
+.social-button {
+  background-color: #685244;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+.social-button:hover {
+  background-color: #8c6849;
+}
+
+
+#location {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#location h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 5px solid #8c6849;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+footer {
+  background-color: #3e2e20;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: auto;
+  height: 240px;
+}
+
+footer img {
+  width: 40px;
+  margin-bottom: 1rem;
+}
+footer a{
+  color: #fff;
+}
+
+.floating-buttons {
+  background-color: #af9783;
+  padding: 10px 10px;
+  border-radius: 30px;
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.floating-buttons .floating-button {
+  background-color: #563e2e;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.floating-buttons .floating-button:hover {
+  background-color: #8c6849;
+}
+
+@media (max-width: 768px) {
+  .category-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-banner {
+    height: 250px;
+  }
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+  .hero-banner p {
+    font-size: 1rem;
+  }
+  .about-content img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-buttons {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .hero-banner {
+    height: 200px;
+  }
+  .hero-banner h1 {
+    font-size: 1.8rem;
+  }
+  .hero-banner p {
+    font-size: 0.9rem;
+  }
+
+  .floating-buttons {
+    bottom: 2rem;
+  }
+}
